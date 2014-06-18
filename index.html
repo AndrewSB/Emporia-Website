@@ -61,6 +61,10 @@
   
   <link rel="stylesheet" href="https://brokerage-static.s3.amazonaws.com/assets/CACHE/css/e18e1f6107a2.css" type="text/css" media="all" />
 
+  <link rel="stylesheet" href="slideshow/slideshow.css">
+  <script type="text/javascript" src="slideshow/slideshow.js"></script>
+  <script type="text/javascript" src="https://raw.githubusercontent.com/jseidelin/pixastic/master/pixastic.js"></script>
+
   
   <!--[if lt IE 9]>
     <script src="https://brokerage-static.s3.amazonaws.com/assets/html5shiv/html5shiv.js"></script>
@@ -143,8 +147,9 @@
 
       <div id="waitlist_wrapper">
         
+
         <form
-          action="/join_waitlist/"
+          action="mailto:emporiaintl@gmail.com"
           class="form-inline"
           data-parsley-validate
           id="join_waitlist_form"
@@ -193,80 +198,16 @@
     
 
 <div class="watchlist-version hidden" id="white_watchlist_version">
-  <div class="container">
-    <div class="watchlist-wrapper mtx mbx" id="white_wrapper">
-      
-      <img
-        alt="iPhone overlay"
-        class="watchlist-phone-overlay"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/PhoneOverlay.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/PhoneOverlay%402x.png"
-      >
 
-      
-      <div class="watchlist-portfolio">
-        <img
-          class="watchlist-slide-buy"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/SlideToBUY.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/SlideToBUY%402x.png"
-        >
-        <img
-          class="watchlist-portfolio-top slide-to-detail slide-to-portfolio"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Portfolio_top.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Portfolio_top%402x.png"
-        >
-        <img
-          class="watchlist-robn-portview slide-to-portfolio"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/ROBN_portview.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/ROBN_portview%402x.png"
-        >
-        <img
-          class="watchlist-hood-portview slide-to-detail"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Hood_PortView.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Hood_PortView%402x.png"
-        >
-        <img
-          class="watchlist-portfolio-bottom slide-to-detail slide-to-portfolio"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Portfolio_bottom.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Portfolio_bottom%402x.png"
-        >
-      </div>
-
-      
-      <img
-        class="watchlist-press animation-press"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Thumbpress.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/Thumbpress%402x.png"
-      >
-
-      
-      <div class="watchlist-robn-bg watchlist-detail-bg"></div>
-      <img
-        class="watchlist-robn-symbol slide-to-detail slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/ROBN_Symbol.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/ROBN_Symbol%402x.png"
-      >
-      <img
-        class="watchlist-robn-chart slide-to-detail slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/ROBN_DetailedChart.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/ROBN_DetailedChart%402x.png"
-      >
-
-      
-      <div class="watchlist-hood-bg watchlist-detail-bg"></div>
-      <img
-        class="watchlist-hood-symbol slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/HOOD_Symbol.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/HOOD_Symbol%402x.png"
-      >
-      <img
-        class="watchlist-hood-chart slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/HOOD_DetailedChart.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-white/HOOD_DetailedChart%402x.png"
-      >
-    </div>
-  </div>
-
+	<div class="container">
+            <div class="slides">
+                <img src="slideshow/efficiencies_360.png" />
+                <img src="slideshow/implement_360.png" />
+                <img src="slideshow/planning_360.png" />
+                <img src="slideshow/assessment_360.png" />
+            </div>
+            <canvas id="slideshow" width="900" height="300"></canvas>
+        </div>
   
   <div class="absolute-element">
     <div class="transition-positioning mtx mbx">
@@ -301,77 +242,6 @@
 
 <div class="watchlist-version hidden" id="black_watchlist_version">
   <div class="container">
-    <div class="watchlist-wrapper mtx mbx" id="black_wrapper">
-      
-      <img
-        alt="iPhone overlay"
-        class="watchlist-phone-overlay"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/PhoneOverlay.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/PhoneOverlay%402x.png"
-      >
-
-      
-      <div class="watchlist-portfolio">
-        <img
-          class="watchlist-slide-buy"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/SlideToBUY.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/SlideToBUY%402x.png"
-        >
-        <img
-          class="watchlist-portfolio-top slide-to-detail slide-to-portfolio"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Portfolio_top.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Portfolio_top%402x.png"
-        >
-        <img
-          class="watchlist-robn-portview slide-to-portfolio"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/ROBN_portview.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/ROBN_portview%402x.png"
-        >
-        <img
-          class="watchlist-hood-portview slide-to-detail"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Hood_PortView.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Hood_PortView%402x.png"
-        >
-        <img
-          class="watchlist-portfolio-bottom slide-to-detail slide-to-portfolio"
-          src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Portfolio_bottom.png"
-          data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Portfolio_bottom%402x.png"
-        >
-      </div>
-
-      
-      <img
-        class="watchlist-press animation-press"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Thumbpress.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/Thumbpress%402x.png"
-      >
-
-      
-      <div class="watchlist-robn-bg watchlist-detail-bg"></div>
-      <img
-        class="watchlist-robn-symbol slide-to-detail slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/ROBN_Symbol.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/ROBN_Symbol%402x.png"
-      >
-      <img
-        class="watchlist-robn-chart slide-to-detail slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/ROBN_DetailedChart.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/ROBN_DetailedChart%402x.png"
-      >
-
-      
-      <div class="watchlist-hood-bg watchlist-detail-bg"></div>
-      <img
-        class="watchlist-hood-symbol slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/HOOD_Symbol.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/HOOD_Symbol%402x.png"
-      >
-      <img
-        class="watchlist-hood-chart slide-swipe"
-        src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/HOOD_DetailedChart.png"
-        data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/watchlist/phone-black/HOOD_DetailedChart%402x.png"
-      >
-    </div>
   </div>
 
   
@@ -455,90 +325,6 @@
   >
   <div id="tradescreen_entry_bg"></div>
 
-  
-  <div id="tradescreen_order_entry">
-    <img 
-      id="tradescreen_entry_const"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/OrderEntryConstant.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/OrderEntryConstant%402x.png"
-    >
-    <img 
-      id="tradescreen_entry_nav"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Nav_EnterStocks.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Nav_EnterStocks%402x.png"
-    >
-    <img 
-      id="tradescreen_entry_state_0"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/EnterStocksState1.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/EnterStocksState1%402x.png"
-    >
-    <img 
-      id="tradescreen_entry_state_6"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/EnterStocksState.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/EnterStocksState%402x.png"
-    >
-    <img 
-      id="tradescreen_numpad"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Numpad.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Numpad%402x.png"
-    >
-    <div id="tradescreen_delete_fade"></div>
-    <img
-      class="animation-press"
-      id="tradescreen_press"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Press.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Press%402x.png"
-    >
-    <img
-      id="tradescreen_back"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Nav_Back.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Nav_Back%402x.png"
-    >
-  </div>
-  <div id="tradescreen_blur"></div>
-  <div id="tradescreen_submit_view">
-    <img
-      id="tradescreen_solid_circle"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/SolidCircleAnimation.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/SolidCircleAnimation%402x.png"
-    >
-    <img
-      id="tradescreen_logo"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/RobinhoodLogoWhiteSmall.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/RobinhoodLogoWhiteSmall%402x.png"
-    >
-    <img
-      id="tradescreen_sending"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Order_Sent_Text.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Order_Sent_Text%402x.png"
-    >
-    <img
-      id="tradescreen_loading_circle"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/LoadingCircleAnimation.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/LoadingCircleAnimation%402x.png"
-    >
-    <img
-      id="tradescreen_received"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Order_Received_Text.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Order_Received_Text%402x.png"
-    >
-    <img
-      id="tradescreen_confirmed"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Order_Confirmed_Text.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Order_Confirmed_Text%402x.png"
-    >
-    <img
-      id="tradescreen_nav_confirmed"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Nav_OrderSubmitted.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/Nav_OrderSubmitted%402x.png"
-    >
-    <img
-      id="tradescreen_set_notifications"
-      src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/SetNotificationsButtons.png"
-      data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/tradescreen/SetNotificationsButtons%402x.png"
-    >
-  </div>
-
 </div>
 
         </div>
@@ -569,10 +355,9 @@
           <h2>A Social Media Hub</h2>
           <h3 class="feature-subtitle dark-text"></h3>
           <p class="lead mts">
-            In the changing..... Our team will utilize social media hubs to optimize our digital marketing strategies so you can stay on top of your game.
+            In the changing digital marketplace, having meaningful interactions with your customers is becoming harder and harder. Our team will utilize social media hubs to optimize your digital marketing strategies so you can stay on top of your game.
             <br>
             <br>
-            As a Emporia customer, you will get ______.
           </p>
         </div>
         <div class="col-md-6 mtm text-center">
