@@ -1,33 +1,14 @@
-.container {
-46
-    color: #000;
-47
-    margin: 20px auto;
-48
-    position: relative;
-49
-    width: 900px;
-50
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
 }
-51
-#slideshow {
-52
-    border:1px #000 solid;
-53
-    box-shadow:4px 6px 6px #444444;
-54
-    display:block;
-55
-    margin:0 auto;
-56
-    height:300px;
-57
-    width:900px;
-58
+45% {
+opacity:1;
 }
-59
-.container .slides {
-60
-    display:none;
-61
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
 }
