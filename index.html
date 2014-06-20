@@ -29,6 +29,24 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        if (bool = null) {
+            var bool = true;
+        }
+        
+        function changeImage() {
+            bool = !bool;
+            if (bool) {
+                document.getElementById("tradescreen_phone_mask").src = "assets/twitter.png"
+            } else {
+                document.getElementById("tradescreen_phone_mask").src = "assets/facebook.png";
+            }
+            console.log("Suck me");
+        }
+
+        setInterval(changeImage, 5000);
+
+    </script>
     <div id="nav">
         <div class="container">
             <form action="" class="collapsed nav-form" data-parsley-validate="" id="nav_waitlist_form" method="post">
@@ -125,10 +143,8 @@
                         </div>
 
                         <div class="col-md-6 col-md-pull-5 mts text-center">
-
-                            <div id="tradescreen_wrapper">
-                                <img id="tradescreen_phone_mask" class="top" style="position:absolute; left:0; -webkit-transition: opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out;" src="assets/facebook.png">
-                                <img class="bottom" style="position:absolute; left:0; -webkit-transition: opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; animation-name: cf3FadeInOut; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-duration: 10s; animation-direction: alternate;" src="assets/twitter.png">
+                            <div id="tradescreen_wrapper" class="shadow">
+                                <img id="tradescreen_phone_mask" class="bottom" src="assets/facebook.png" />
 
                                 <div id="tradescreen_entry_bg"></div>
                             </div>
