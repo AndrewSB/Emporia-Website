@@ -7,9 +7,6 @@
   <title>Emporia International</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <meta content="Welcome to Emporia, let us tell your story." name="description">
-  <meta content="Welcome to Emporia, let us tell your story.">
-  <meta content="Emporia">
-  <meta content="website">
   <meta content="https://www.emporiaintl.com">
   <meta content="image/png">
   <meta content="601">
@@ -33,7 +30,7 @@
   <script src="slideshow/slideshow.js" type="text/javascript"></script>
   <div id="nav">
     <div class="container">
-      <form action="" class="collapsed nav-form" data-parsley-validate="" id="nav_waitlist_form" method="post">
+      <form action="sendmail.php" class="collapsed nav-form" data-parsley-validate="" id="nav_waitlist_form" method="post">
 
         <div class="form-group" id="nav_email_group">
           <label class="sr-only" for="join_waitlist_email">Email address</label>
@@ -42,13 +39,6 @@
         <button class="btn btn-lg btn-default nav-button" id="nav_waitlist_button" type="button">Get In Touch With us
         </button>
       </form>
-      <script type="text/jquery">
-        $('#nav_waitlist_button').live('click', function() {
-          $.get('sendmail.php?functionName=test&inputvar=something');
-
-          return false;
-        });
-      </script>
       <a href="index.html" id="nav_icon">
         <img alt="Logo" data-at2x="assets/favicon.png" height="50" src="assets/favicon.png" width="50">
       </a>
