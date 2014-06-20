@@ -1,244 +1,197 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>Emporia International</title>
-    <meta content= "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    <meta content="Welcome to Emporia, let us tell your story." name="description">
-    <meta content="Welcome to Emporia, let us tell your story.">
-    <meta content="Emporia">
-    <meta content="website">
-    <meta content="https://www.emporiaintl.com">
-    <meta content="image/png">
-    <meta content="601">
-    <meta content="315">
-    <meta content="assets/background.jpg">
-    <meta content="image/png">
-    <meta content="601">
-    <meta content="315">
-    <link href="assets/favicon_32x32.png" rel="shortcut icon">
-    <link href="https://brokerage-static.s3.amazonaws.com/assets/CACHE/css/e18e1f6107a2.css" media="all" rel="stylesheet" type="text/css">
-    <link href="slideshow/slideshow.css" rel="stylesheet">
-    <script src= "https://raw.githubusercontent.com/jseidelin/pixastic/master/pixastic.js" type="text/javascript"></script>
 
-    <!--[if lt IE 9]>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Emporia International</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta content="Welcome to Emporia, let us tell your story." name="description">
+  <meta content="Welcome to Emporia, let us tell your story.">
+  <meta content="Emporia">
+  <meta content="website">
+  <meta content="https://www.emporiaintl.com">
+  <meta content="image/png">
+  <meta content="601">
+  <meta content="315">
+  <meta content="assets/background.jpg">
+  <meta content="image/png">
+  <meta content="601">
+  <meta content="315">
+  <link href="assets/favicon_32x32.png" rel="shortcut icon">
+  <link href="https://brokerage-static.s3.amazonaws.com/assets/CACHE/css/e18e1f6107a2.css" media="all" rel="stylesheet" type="text/css">
+  <link href="slideshow/slideshow.css" rel="stylesheet">
+  <script src="https://raw.githubusercontent.com/jseidelin/pixastic/master/pixastic.js" type="text/javascript"></script>
+  <script type="text/javascript" src="slideshow/transitions.js"></script>
+  <!--[if lt IE 9]>
     <script src="https://brokerage-static.s3.amazonaws.com/assets/html5shiv/html5shiv.js"></script>
     <script src="https://brokerage-static.s3.amazonaws.com/assets/respond/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-    <script type="text/javascript">
-        if (bool = null) {
-            var bool = true;
-        }
-        
-        function changeImage() {
-            bool = !bool;
-            if (bool) {
-                document.getElementById("tradescreen_phone_mask").src = "assets/twitter.png"
-            } else {
-                document.getElementById("tradescreen_phone_mask").src = "assets/facebook.png";
-            }
-            console.log("Suck me");
-        }
+  <script src="slideshow/slideshow.js" type="text/javascript"></script>
+  <div id="nav">
+    <div class="container">
+      <form action="" class="collapsed nav-form" data-parsley-validate="" id="nav_waitlist_form" method="post">
 
-        setInterval(changeImage, 5000);
-
-    </script>
-    <div id="nav">
-        <div class="container">
-            <form action="" class="collapsed nav-form" data-parsley-validate="" id="nav_waitlist_form" method="post">
-                <input name='csrfmiddlewaretoken' type='hidden' value='yItQTFJqkgkDImh1EU8RkcxGYQdiT381'>
-
-                <div class="form-group" id="nav_email_group">
-                    <label class="sr-only" for="join_waitlist_email">Email address</label> 
-                    <input class="form-control input-lg waitlist-email"data-parsley-error-message="!" data-parsley-required="true"
-                    data-parsley-trigger="change" data-parsley-type="email" id=
-                    "nav_email_input" name="email" placeholder=
-                    "Enter email address" type="email">
-                </div><button class="btn btn-lg btn-default nav-button" id=
-                "nav_waitlist_button" type="submit">Get In Touch With
-                us</button>
-            </form>
-            <a href="index.html" id="nav_icon"><img alt="Logo"
-            data-at2x="assets/favicon.png" height="50" src="assets/favicon.png"
-            width="50"></a>
+        <div class="form-group" id="nav_email_group">
+          <label class="sr-only" for="join_waitlist_email">Email address</label>
+          <input class="form-control input-lg waitlist-email" data-parsley-error-message="!" data-parsley-required="true" data-parsley-trigger="change" data-parsley-type="email" id="nav_email_input" name="email" placeholder="Enter email address" type="email">
         </div>
+        <button class="btn btn-lg btn-default nav-button" id="nav_waitlist_button" type="button">Get In Touch With us
+        </button>
+      </form>
+      <script type="text/jquery">
+        $('#nav_waitlist_button').live('click', function() {
+          $.get('sendmail.php?functionName=test&inputvar=something');
+
+          return false;
+        });
+      </script>
+      <a href="index.html" id="nav_icon">
+        <img alt="Logo" data-at2x="assets/favicon.png" height="50" src="assets/favicon.png" width="50">
+      </a>
     </div>
+  </div>
 
-    <div id="content">
-        <div id="top_content">
-            <div id="header" style=
-            "background-image:url(assets/background.jpg);">
-                <div class="container text-center" id="lead_content">
-                    <a href="index.html" id="logo_link"><img alt="Logo"
-                    data-at2x="assets/favicon.png" height="100" src=
-                    "assets/favicon.png" width="100"></a>
+  <div id="content">
+    <div id="top_content">
+      <div id="header" style="background-image:url(assets/background.jpg);">
+        <div class="container text-center" id="lead_content">
+          <a href="index.html" id="logo_link">
+            <img alt="Logo" data-at2x="assets/favicon.png" height="100" src="assets/favicon.png" width="100">
+          </a>
 
-                    <h1 class="robinhood-tagline light-text"><span id=
+          <h1 class="robinhood-tagline light-text"><span id=
                     "robinhood_title">Emporia International</span></h1>
 
-                    <h2 class="robinhood-tagline light-text">Let us tell your
+          <h2 class="robinhood-tagline light-text">Let us tell your
                     story</h2>
 
-                    <div id="waitlist_wrapper">
-                        <form action="mailto:emporiaintl@gmail.com" class=
-                        "form-inline" data-parsley-validate="" id=
-                        "join_waitlist_form" method="post">
-                            <input name='csrfmiddlewaretoken' type='hidden'
-                            value='yItQTFJqkgkDImh1EU8RkcxGYQdiT381'>
+          <div id="waitlist_wrapper">
+            <form action="mailto:emporiaintl@gmail.com" class="form-inline" data-parsley-validate="" id="join_waitlist_form" method="post">
+              <div class="form-group" id="waitlist_email_group">
+                <label class="sr-only" for="join_waitlist_email">Email address</label>
+                <input class="form-control input-lg waitlist-email" data-parsley-error-message="!" data-parsley-required="true" data-parsley-trigger="change" data-parsley-type="email" id="join_waitlist_email" name="email" placeholder="Enter email address" size="40" type="email">
+              </div>
 
-                            <div class="form-group" id="waitlist_email_group">
-                                <label class="sr-only" for=
-                                "join_waitlist_email">Email address</label>
-                                <input class=
-                                "form-control input-lg waitlist-email"
-                                data-parsley-error-message="!"
-                                data-parsley-required="true"
-                                data-parsley-trigger="change"
-                                data-parsley-type="email" id=
-                                "join_waitlist_email" name="email" placeholder=
-                                "Enter email address" size="40" type="email">
-                            </div>
-
-                            <div class="form-group">
-                                <button class="btn btn-lg btn-default" id=
-                                "home_waitlist_button" type="submit">Schedule
-                                An Appointment</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+              <div class="form-group">
+                <button class="btn btn-lg btn-default" id="home_waitlist_button" type="submit">Schedule An Appointment</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="features">
-            <div class="light-bg">
-                <div class="container">
-                    <div class="row text-center mtx" id="pricing_feature">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h2>Don't get left in the Stone Age</h2>
+    <div id="features">
+      <div class="light-bg">
+        <div class="container">
+          <div class="row text-center mtx" id="pricing_feature">
+            <div class="col-md-10 col-md-offset-1">
+              <h2>Don't get left in the Stone Age</h2>
 
-                            <h3 class="feature-subtitle dark-text">Let us work
+              <h3 class="feature-subtitle dark-text">Let us work
                             with you</h3>
-                        </div>
-                    </div>
+            </div>
+          </div>
 
-                    <div class="row mts">
-                        <div class="col-md-5 col-md-push-6 lead">
-                            <p class="mts">Emporia began with the idea that the
-                            new marketing platform lies within the digital
-                            world.<br>
-                            <br>
-                            We specialize in the digital marketing and other
-                            innovative methods to grow your social reach.<br>
-                            <br>
-                            We offer our services at a low cost by cutting out
-                            conventional marketing methods. <a href=
-                            "mailto:emporiaintl@gmail.com">Contact us</a> for
-                            more details.<br>
-                            <br></p>
-                        </div>
-
-                        <div class="col-md-6 col-md-pull-5 mts text-center">
-                            <div id="tradescreen_wrapper" class="shadow">
-                                <img id="tradescreen_phone_mask" class="bottom" src="assets/facebook.png" />
-
-                                <div id="tradescreen_entry_bg"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="row mts">
+            <div class="col-md-5 col-md-push-6 lead">
+              <p class="mts">Emporia began with the idea that the new marketing platform lies within the digital world.
+                <br>
+                <br>We specialize in the digital marketing and other innovative methods to grow your social reach.
+                <br>
+                <br>We offer our services at a low cost by cutting out conventional marketing methods. <a href="mailto:emporiaintl@gmail.com">Contact us</a> for more details.
+                <br>
+                <br>
+              </p>
             </div>
 
-            <div class="container">
-                <div class="row text-center mtx mbl">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="dark-feature-header">A Social Media Hub</h2>
+            <div class="col-md-6 col-md-pull-5 mts text-center">
+              <div id="tradescreen_wrapper" class="shadow">
+                <img id="tradescreen_phone_mask" class="bottom" src="assets/facebook.png" />
 
-                        <h3 class="feature-subtitle light-text"></h3>
+                <div id="tradescreen_entry_bg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                        <p class="lead mtm dark-feature-text">In the changing
-                        digital marketplace, having meaningful interactions
-                        with your customers is becoming harder and harder. Our
-                        team will utilize social media hubs to optimize your
-                        digital marketing strategies so you can stay on top of
-                        your game.<br>
-                        <br></p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row text-center mtx mbl">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="dark-feature-header">A Social Media Hub</h2>
+
+            <h3 class="feature-subtitle light-text"></h3>
+
+            <p class="lead mtm dark-feature-text">In the changing digital marketplace, having meaningful interactions with your customers is becoming harder and harder. Our team will utilize social media hubs to optimize your digital marketing strategies so you can stay on top of your game.
+              <br>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-feature white-bg">
+        <div class="container">
+          <div class="row mtx mbx">
+            <div class="col-md-6">
+              <h2>Analysis &amp; Strategy</h2>
+
+              <h3 class="feature-subtitle dark-text"></h3>
+
+              <p class="lead mts">Our team at Emporia will analyze your buissness and it's surroundings. Together, we will create a custom marketing strategy that will not only target your existing customer base, but enhance it.
+                <br>
+                <br>
+              </p>
             </div>
 
-            <div class="mini-feature white-bg">
-                <div class="container">
-                    <div class="row mtx mbx">
-                        <div class="col-md-6">
-                            <h2>Analysis &amp; Strategy</h2>
-
-                            <h3 class="feature-subtitle dark-text"></h3>
-
-                            <p class="lead mts">Our team at Emporia will
-                            analyze your buissness and it's surroundings.
-                            Together, we will create a custom marketing
-                            strategy that will not only target your existing
-                            customer base, but enhance it.<br>
-                            <br></p>
-                        </div>
-
-                        <div class="col-md-6 mtm text-center"><img alt=
-                        "Fast execution" class="downscale-fit" src=
-                        "assets/analysis_and_strategy.png"></div>
-                    </div>
-                </div>
+            <div class="col-md-6 mtm text-center">
+              <img alt="Fast execution" class="downscale-fit" src="assets/analysis_and_strategy.png">
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="mini-feature light-bg">
-                <div class="container">
-                    <div class="row mtx mbx">
-                        <div class="col-md-6 col-md-push-6">
-                            <h2>Real-time Statistics</h2>
+      <div class="mini-feature light-bg">
+        <div class="container">
+          <div class="row mtx mbx">
+            <div class="col-md-6 col-md-push-6">
+              <h2>Real-time Statistics</h2>
 
-                            <h3 class="feature-subtitle dark-text">Routinely at
+              <h3 class="feature-subtitle dark-text">Routinely at
                             your service</h3>
 
-                            <p class="lead mts">We provide quantifiable
-                            statistics on just how well your digital outreaches
-                            are doing.</p>
-                        </div>
-
-                        <div class="col-md-6 col-md-pull-6 mtm text-center">
-                        <img alt="Graphs" class="downscale-fit" data-at2x=
-                        "https://brokerage-static.s3.amazonaws.com/assets/marketing/images/home/market_data%402x.gif"
-                        src=
-                        "https://brokerage-static.s3.amazonaws.com/assets/marketing/images/home/market_data.gif"></div>
-                    </div>
-                </div>
+              <p class="lead mts">We provide quantifiable statistics on just how well your digital outreaches are doing.</p>
             </div>
 
-            <div class="about-feature" id="about_team">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h2 class="mtx dark-feature-header">The power of
+            <div class="col-md-6 col-md-pull-6 mtm text-center">
+              <img alt="Graphs" class="downscale-fit" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/home/market_data%402x.gif" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/home/market_data.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-feature" id="about_team">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="mtx dark-feature-header">The power of
                             five young minds in one company.</h2>
 
-                            <p class="lead mtx mbx dark-feature-text">Our team
-                            works out of Novi, Michigan. We are four innovative
-                            and young individuals. Though still in high school,
-                            we are just as qualified as any other marketing
-                            consultant. With worldwide experiences, numerous
-                            awards at the state and international level, and a
-                            vision to supplement, our team boasts a diverse
-                            skill set that would prove valuable to any
-                            business. Ultimately, we are four teenagers who
-                            prosper in the digital world every day.<br>
-                            <br></p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- <div class="white-bg about-feature">
+              <p class="lead mtx mbx dark-feature-text">Our team works out of Novi, Michigan. We are four innovative and young individuals. Though still in high school, we are just as qualified as any other marketing consultant. With worldwide experiences, numerous awards at the state and international
+                level, and a vision to supplement, our team boasts a diverse skill set that would prove valuable to any business. Ultimately, we are five teenagers who prosper in the digital world every day.
+                <br>
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="white-bg about-feature">
     <div class="container text-center">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -249,38 +202,33 @@
       </div>
     </div>
   </div> -->
-        </div>
     </div>
+  </div>
 
-    <div class="light-bg" id="base_footer">
-        <div class="container">
-            <div class="row mtl mbl">
-                <div class="col-md-7 col-md-offset-1 mbl small">
-                    Copyright stuff<br>
-                    <a href="mailto:emporiaintl@gmail.com">Contact Us</a> 
-                    <a href="tel:2489742400">CEO Rohith Kolluri</a> <br>
-                    <br>
-                    Copyright © 2014 Emporia Intl, All rights reserved.
-                </div>
-
-                <div class="col-md-3 text-center social-links mbl">
-                    <a href="https://www.twitter.com/emporiaintl" target=
-                    "_blank"><img alt="Twitter" class="social-icon" data-at2x=
-                    "https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/twitter%402x.gif"
-                    src=
-                    "https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/twitter.gif"></a>
-                    <a href="https://www.facebook.com/emporiaintl" target=
-                    "_blank"><img alt="Facebook" class="social-icon" data-at2x=
-                    "https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/facebook%402x.gif"
-                    src=
-                    "https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/facebook.gif">
-                    </a>
-                </div>
-            </div>
+  <div class="light-bg" id="base_footer">
+    <div class="container">
+      <div class="row mtl mbl">
+        <div class="col-md-7 col-md-offset-1 mbl small">
+          Copyright
+          <br>
+          <a href="mailto:emporiaintl@gmail.com">Contact Us</a> 
+          <a href="tel:2489742400">CEO Rohith Kolluri</a> 
+          <br>
+          <br>Copyright © 2014 Emporia Intl, All rights reserved.
         </div>
+
+        <div class="col-md-3 text-center social-links mbl">
+          <a href="https://www.twitter.com/emporiaintl" target="_blank">
+            <img alt="Twitter" class="social-icon" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/twitter%402x.gif" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/twitter.gif">
+          </a>
+          <a href="https://www.facebook.com/emporiaintl" target="_blank">
+            <img alt="Facebook" class="social-icon" data-at2x="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/facebook%402x.gif" src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/social/facebook.gif">
+          </a>
+        </div>
+      </div>
     </div>
-    <script src=
-    "https://brokerage-static.s3.amazonaws.com/assets/CACHE/js/397c0b446bf0.js"
-    type="text/javascript"></script>
+  </div>
+  <script src="https://brokerage-static.s3.amazonaws.com/assets/CACHE/js/397c0b446bf0.js" type="text/javascript"></script>
 </body>
+
 </html>
